@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+:root {
+  --clr-dark: #000000;
+  --clr-light: #fff8e5;
+  --clr-prime: #8ab98f;
+  --clr-red: #ca3202;
+  --clr-grey: #7f7f7f;
+  /* red rgb(202, 50, 2) */
+  /* grey rgb(127, 127, 127) */
+  /* prime rgb(138, 185, 143) */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--clr-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculetor {
+  background-color: var(--clr-prime);
+  padding: 20px;
+  border-radius: 10px;
+}
+.calculetor form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--clr-red);
+  color: var(--clr-dark);
+  cursor: pointer;
+  font-size: 20px;
+}
