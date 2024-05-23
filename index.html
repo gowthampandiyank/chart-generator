@@ -2,53 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="public/img1.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>calculor</title>
+    <title>chart genarater</title>
   </head>
   <body>
-    <div class="container">
-      <div class="echo "# calculetor" >> README.md">
-        <form>
-          <div>
-            <input type="text" name="display" />
+    <div class="chart">
+      <div class="chart-header">
+        <div class="chart-text">
+          <h1>My Balance</h1>
+          <h1>$ 100.00</h1>
+        </div>
+      </div>
+
+      <div class="chart-body">
+        <h1>Spanding -last 7 days</h1>
+        <div class="chart-bar">
+          <div class="bar">
+            <!-- seven bars -->
+            <div><div class="tooltip" id="one">$10.25</div></div>
+            <div><div class="tooltip" id="two">$20.91</div></div>
+            <div><div class="tooltip" id="three">$40.87</div></div>
+            <div><div class="tooltip" id="four">$05.42</div></div>
+            <div><div class="tooltip" id="five">$85.01</div></div>
+            <div><div class="tooltip" id="six">$65.78</div></div>
+            <div><div class="tooltip" id="seven">$43.00</div></div>
           </div>
-          <div>
-            <input type="button" value="AC" />
-            <input type="button" value="DE" />
-            <input type="button" value="." />
-            <input type="button" value="/" />
+          <div class="labels">
+            <p>mon</p>
+            <p>tue</p>
+            <p>wed</p>
+            <p>thu</p>
+            <p>fri</p>
+            <p>sat</p>
+            <p>sun</p>
           </div>
-          <div>
-            <input type="button" value="7" />
-            <input type="button" value="8" />
-            <input type="button" value="9" />
-            <input type="button" value="*" />
+        </div>
+        <hr />
+        <div class="totel-container">
+          <div class="totel">
+            <h5>Total This Month</h5>
+            <h1>$100.33</h1>
           </div>
-          <div>
-            <input type="button" value="4" />
-            <input type="button" value="5" />
-            <input type="button" value="6" />
-            <input type="button" value="-" />
+          <div class="month">
+            <h5>+2.4%</h5>
+            <h5>From Last Month</h5>
           </div>
-          <div>
-            <input type="button" value="1" />
-            <input type="button" value="2" />
-            <input type="button" value="3" />
-            <input type="button" value="+" />
-          </div>
-          <div>
-            <input type="button" value="00" />
-            <input type="button" value="0" />
-            <input type="button" value="=" />
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-    <script type="module" src="./src/main.js"></script>
   </body>
+  <script type="module" src="./src/main.js"></script>
 </html>
